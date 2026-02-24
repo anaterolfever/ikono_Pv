@@ -1068,8 +1068,35 @@ ul.experience-grid {
   color: #1a1a1a;
 }
 
+/* Intro editorial */
+.pd-section--intro p {
+  font: var(--pd-font-body-paragraph);
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.pd-section--intro p:first-child {
+  font: var(--pd-font-body-bold);
+  font-size: 1.05rem;
+}
+
+/* Enjoy & outro icon as emoji */
+.pd-section--enjoy .pd-section__icon,
+.pd-section--outro .pd-section__icon {
+  font-size: 1.2rem;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+  line-height: 1.65rem;
+}
+
+/* 3-column grid for spaces on desktop */
 @media (min-width: 992px) {
   ul.experience-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pd-section--spaces ul.experience-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
