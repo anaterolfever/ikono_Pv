@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entradas IKONO Madrid | Fever</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <img src="assets/images/logos/fever-logo-white.svg" alt="Fever" class="logo-white" />
+        <img src="assets/images/logos/fever-logo-black.svg" alt="Fever" class="logo-black" />
+      </a>
+      <nav class="header-nav">
+        <a href="#" class="nav-link">Descubre</a>
+        <span class="nav-divider">|</span>
+        <a href="#" class="nav-link lang-link">es</a>
+        <a href="#" class="nav-link city-link">Madrid</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- GALLERY HERO -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-main">
+        <img src="assets/images/gallery/gallery-1.jpg" alt="IKONO Madrid" class="gallery-main-img active" id="gallery-img-0" />
+        <img src="assets/images/gallery/gallery-2.jpg" alt="IKONO Madrid" class="gallery-main-img" id="gallery-img-1" />
+        <img src="assets/images/gallery/gallery-3.jpg" alt="IKONO Madrid" class="gallery-main-img" id="gallery-img-2" />
+        <img src="assets/images/gallery/gallery-4.jpg" alt="IKONO Madrid" class="gallery-main-img" id="gallery-img-3" />
+        <img src="assets/images/gallery/gallery-5.jpg" alt="IKONO Madrid" class="gallery-main-img" id="gallery-img-4" />
+        <button class="gallery-arrow gallery-arrow-left" onclick="changeGallery(-1)">&#8249;</button>
+        <button class="gallery-arrow gallery-arrow-right" onclick="changeGallery(1)">&#8250;</button>
+        <div class="gallery-dots">
+          <span class="gallery-dot active" onclick="goToGallery(0)"></span>
+          <span class="gallery-dot" onclick="goToGallery(1)"></span>
+          <span class="gallery-dot" onclick="goToGallery(2)"></span>
+          <span class="gallery-dot" onclick="goToGallery(3)"></span>
+          <span class="gallery-dot" onclick="goToGallery(4)"></span>
+        </div>
+        <div class="gallery-label">Galería</div>
+      </div>
+      <div class="gallery-thumbs">
+        <img src="assets/images/gallery/gallery-1.jpg" alt="IKONO Madrid 1" class="gallery-thumb active" onclick="goToGallery(0)" />
+        <img src="assets/images/gallery/gallery-2.jpg" alt="IKONO Madrid 2" class="gallery-thumb" onclick="goToGallery(1)" />
+        <img src="assets/images/gallery/gallery-3.jpg" alt="IKONO Madrid 3" class="gallery-thumb" onclick="goToGallery(2)" />
+        <img src="assets/images/gallery/gallery-4.jpg" alt="IKONO Madrid 4" class="gallery-thumb" onclick="goToGallery(3)" />
+        <img src="assets/images/gallery/gallery-5.jpg" alt="IKONO Madrid 5" class="gallery-thumb" onclick="goToGallery(4)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="content-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="content-left">
+
+        <!-- Title & Rating -->
+        <div class="plan-header">
+          <div class="plan-rating-top">
+            <span class="star-icon">★</span>
+            <span class="rating-value">4.2</span>
+            <span class="rating-count">(492)</span>
+          </div>
+          <h1 class="plan-title">IKONO Madrid</h1>
+          <div class="plan-rating-row">
+            <span class="star-icon">★</span>
+            <span class="rating-value">4.2</span>
+            <span class="rating-count">(492)</span>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Description -->
+        <div class="plan-description">
+          <p>⭐ <strong>IKONO Madrid</strong> te ofrece un viaje inmersivo por mundos coloridos y sensoriales a través de 12 espacios lúdicos y creativos. ¡Diversión y recuerdos inolvidables para todas las edades a pocos pasos de Atocha! ¡No te quedes sin tus entradas!</p>
+
+          <p>📷 <em>Descubre la nueva experiencia <strong>COLORIS IRIS</strong>, inspirada en la singular belleza del iris humano. Captura tu mirada en alta resolución y llévate un recuerdo único, disponible de forma digital, impreso o enmarcado. Elige entre cuatro efectos artísticos (explosión, yin &amp; yang, mitad y mitad o ninguno) y deja que tus ojos cuenten su historia. ¡Ideal para adultos y niños mayores de 6 años!</em></p>
+
+          <p><strong>Qué vas a disfrutar</strong></p>
+          <ul class="description-list">
+            <li>📷 Experiencias sensoriales e inmersivas diseñadas para despertar tu curiosidad y la creatividad sin importar tu edad</li>
+            <li>💥 Diferentes mundos en más de 600 m² en los que te fusionarás con el espacio</li>
+            <li>🖼️ Capturarás recuerdos imborrables a lo largo de todo el recorrido</li>
+            <li>💫 Darás rienda suelta a tu niño interior y redescubrirás la alegría pura del juego</li>
+            <li>✨ Serás el protagonista de tu viaje: explorarás y crearás sin limitarte a observar</li>
+            <li>🚶 Una experiencia inmersiva de una hora por sus tres plantas en pleno centro de Madrid</li>
+          </ul>
+
+          <p><strong>Lo que dicen de IKONO Madrid</strong>: Una experiencia destacada por nuestra comunidad <strong>[4.6/5 ⭐⭐ 10.7 mil Reseñas en Google]</strong></p>
+
+          <p>🎁 ¡Regala recuerdos a alguien especial! Compra una tarjeta regalo para IKONO Madrid <a href="https://feverup.com/m/501153?thm=6573" class="text-link">aquí</a></p>
+
+          <p><strong>Información</strong></p>
+          <ul class="description-list">
+            <li>📅 Fecha y hora: selecciona la fecha y hora que quieras directamente en el selector de entradas</li>
+            <li>— Se recomienda llegar puntual, tendrás hasta 20 minutos desde tu hora de reserva para acceder</li>
+            <li>⏳ Duración: 45 minutos - 1 hora</li>
+            <li>⏰ <strong>Los visitantes que lleguen con más de 20 minutos de retraso al último horario no serán admitidos</strong></li>
+            <li>📍 Lugar: IKONO, Madrid</li>
+            <li>👤 Edad: todos los públicos</li>
+            <li>♿ Accesibilidad: no se permite el acceso con carros de bebé ni sillas de ruedas</li>
+            <li>👉 Experiencia apta para su compra con el Bono Cultural Joven del Ministerio de Cultura y Deportes. Puedes consultar las preguntas frecuentes al respecto y sus respuestas <a href="https://docs.google.com/document/d/1YTOZCVWyKEkzlFdayvBmhEpzna4N2w2R8vRmK5CjB9Y/pub" class="text-link">aquí</a></li>
+            <li>❓ Puedes consultar las preguntas frecuentes de esta experiencia <a href="https://docs.google.com/document/d/e/2PACX-1vRcdAS9qF6hO6-GjRP8OFO49Rea5Gxi5-jOWtVbLu2yQqICUgfoe1UplE34WTmkcCnvq_7P4DuCAuKd/pub" class="text-link">aquí</a></li>
+          </ul>
+
+          <p><strong>Descripción</strong></p>
+          <p>Bienvenido a IKONO Madrid, una experiencia inmersiva para todas las edades que te transporta a mundos sensoriales y creativos. A pocos pasos de la estación de Atocha, IKONO va más allá de los museos tradicionales. La experiencia se desarrolla a través de más de 12 espacios creativos que reproducen la emoción de viajar por diferentes mundos, permitiéndote crear recuerdos inolvidables con amigos y familiares. Salta a una piscina gigante de bolas, baila en una sala de confeti o explora un bosque de luces y colores. Cada sala es una nueva aventura, perfecta para cualquiera que esté dispuesto a convertir su día en algo extraordinario. ¿Estás preparado? ¡Consigue tus entradas para IKONO Madrid!</p>
+        </div>
+
+        <!-- Reviews -->
+        <section class="reviews-section">
+          <h2 class="section-title">Opiniones de usuarios</h2>
+          <div class="reviews-summary">
+            <span class="reviews-score">4.2 <span class="reviews-score-max">/5</span></span>
+            <span class="reviews-based">basado en 492 opiniones</span>
+          </div>
+          <div class="reviews-stars">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star half">★</span>
+          </div>
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-avatar">A</div>
+              <div class="review-content">
+                <div class="review-author">Alicia G. <span class="review-date">ene 2026</span></div>
+                <p class="review-text">Superentretenido. Ideal para ir en familia o grupo</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">C</div>
+              <div class="review-content">
+                <div class="review-author">Cruz maría D. <span class="review-date">ene 2026</span></div>
+                <p class="review-text">Ideal para ir en familia 🩷</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">L</div>
+              <div class="review-content">
+                <div class="review-author">Laura M. <span class="review-date">ene 2026</span></div>
+                <p class="review-text">Experiencia divertida para hacer fotos y despertar los sentidos tanto adultos como niños.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">B</div>
+              <div class="review-content">
+                <div class="review-author">Blanca M. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">El trato del personal muy amable y la experiencia fue muy divertida. Fuimos un grupo de 3 familias juntas, el mayor 58 años y el más pequeño 10 y realmente no sabría decir quién se lo pasó mejor!!</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">E</div>
+              <div class="review-content">
+                <div class="review-author">E B. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">Una experiencia para hacer en familia sea cual sea la edad. Muy recomendable</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">I</div>
+              <div class="review-content">
+                <div class="review-author">Itziar S. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">Una experiencia muy agradable y sobre todo muy divertida 🤩🤩🤩</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">J</div>
+              <div class="review-content">
+                <div class="review-author">Juani C. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">Una experiencia sensorial maravillosa...</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">A</div>
+              <div class="review-content">
+                <div class="review-author">Alicia R. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">Muy original. Nos encantó</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">J</div>
+              <div class="review-content">
+                <div class="review-author">Joely L. <span class="review-date">nov 2025</span></div>
+                <p class="review-text">Muy cool, agradable ambiente y unas fotos que molan</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">R</div>
+              <div class="review-content">
+                <div class="review-author">Rebeca R. <span class="review-date">ene 2026</span></div>
+                <p class="review-text">El espacio está chulo y es muy bonito de ver, quizá cambiaría el orden de las cosas</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">M</div>
+              <div class="review-content">
+                <div class="review-author">Maria jose V. <span class="review-date">ene 2026</span></div>
+                <p class="review-text">10/10</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">V</div>
+              <div class="review-content">
+                <div class="review-author">Victor F. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">fue maravilloso para repetir sin duda</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">V</div>
+              <div class="review-content">
+                <div class="review-author">Vanesa G. <span class="review-date">oct 2025</span></div>
+                <p class="review-text">super chuli</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">A</div>
+              <div class="review-content">
+                <div class="review-author">Alejandra A. <span class="review-date">dic 2025</span></div>
+                <p class="review-text">Hemos ido en familia, con un niño de 3 y otro de 6, fue todo un acierto les encantó.</p>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">L</div>
+              <div class="review-content">
+                <div class="review-author">Lourdes R. <span class="review-date">nov 2025</span></div>
+                <p class="review-text">Muy divertido!</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://feverup.com/m/465628/reviews" class="btn-see-all">Ver todas las opiniones</a>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section">
+          <h2 class="section-title">¿Alguna duda?</h2>
+          <p>Contáctanos <a href="https://fever.zendesk.com/hc/es?ticket_form_id=360001032452&plan_id=465628&plan_name=IKONO+Madrid&city=MAD&country=ES&showContactLink=true" class="text-link">aquí</a></p>
+        </section>
+
+        <!-- Map / Location -->
+        <section class="location-section">
+          <h2 class="section-title">¿Cómo llegar?</h2>
+          <div class="location-card">
+            <div class="location-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6!2d-3.6985!3d40.4128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f4b4b4b4b4b%3A0x0!2sCalle+de+S%C3%A1nchez+Bustillo+7%2C+Madrid!5e0!3m2!1ses!2ses!4v1"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info">
+              <a href="https://feverup.com/es/madrid/venue/ikono-madrid" class="location-name">IKONO Madrid</a>
+              <p class="location-address">Calle de Sánchez Bustillo, 7, Madrid, 28012</p>
+              <div class="metro-lines">
+                <div class="metro-line">
+                  <img src="assets/images/logos/metro-l1.png" alt="Línea 1" class="metro-icon" />
+                  <span>Antón Martín</span>
+                </div>
+                <div class="metro-line">
+                  <img src="assets/images/logos/metro-l1.png" alt="Línea 1" class="metro-icon" />
+                  <span>Atocha Renfe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Ticket Selector -->
+      <aside class="content-right">
+        <div class="ticket-widget sticky-widget">
+          <div class="widget-header">
+            <div class="widget-rating">
+              <span class="star-icon">★</span>
+              <span class="rating-value">4.2</span>
+              <span class="rating-count">(492)</span>
+            </div>
+            <h2 class="widget-title">IKONO Madrid</h2>
+          </div>
+
+          <div class="widget-section-title">Selecciona fecha y sesión</div>
+
+          <div class="ticket-types">
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada General (+14)</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para 1 persona desde 14 años</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada Infantil (4-13)</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para 1 menor de 4 a 13 años</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada Reducida</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para 1 persona con discapacidad o 1 estudiante</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada Family Pass</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para 3 personas (2 adultos + 1 niño o 1 adulto + 2 niños)</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada Grupos (+6)</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para 1 persona en un grupo de más de 6 personas</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+            <div class="ticket-type">
+              <div class="ticket-type-info">
+                <span class="ticket-type-name">Entrada bebé (0-3)</span>
+                <span class="ticket-type-desc">Acceso a la experiencia para un bebé de 0 a 3 años</span>
+              </div>
+              <button class="ticket-select-btn">Seleccionar</button>
+            </div>
+          </div>
+
+          <button class="btn-tickets">Tickets</button>
+        </div>
+
+        <!-- Location widget (right column repeat) -->
+        <div class="location-widget">
+          <h3 class="widget-subtitle">¿Cómo llegar?</h3>
+          <a href="https://feverup.com/es/madrid/venue/ikono-madrid" class="location-name">IKONO Madrid</a>
+          <p class="location-address">Calle de Sánchez Bustillo, 7, Madrid, 28012</p>
+          <div class="metro-lines">
+            <div class="metro-line">
+              <img src="assets/images/logos/metro-l1.png" alt="Línea 1" class="metro-icon" />
+              <span>Antón Martín</span>
+            </div>
+            <div class="metro-line">
+              <img src="assets/images/logos/metro-l1.png" alt="Línea 1" class="metro-icon" />
+              <span>Atocha Renfe</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /content-grid -->
+
+    <!-- SIMILAR EXPERIENCES -->
+    <section class="experiences-section">
+      <h2 class="section-title">Experiencias similares</h2>
+      <div class="experiences-scroll">
+        <div class="experience-card">
+          <a href="https://feverup.com/m/92796">
+            <img src="assets/images/similar/similar-sweet-space.jpg" alt="Sweet Space Museum" />
+            <div class="exp-info">
+              <span class="exp-venue">ABC Serrano</span>
+              <h3 class="exp-title">Sweet Space Museum: el mundo de los dulces</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.2 <span class="exp-reviews">(6650)</span></span>
+                <span class="exp-dates">24 feb - 31 jul</span>
+              </div>
+              <span class="exp-price">Desde 15,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/299244">
+            <img src="assets/images/similar/similar-gastrocultural.jpg" alt="Experiencia GastroCultural" />
+            <div class="exp-info">
+              <span class="exp-venue">Café de La Galería (Calle de Bailén)</span>
+              <h3 class="exp-title">Experiencia GastroCultural</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.0 <span class="exp-reviews">(6)</span></span>
+                <span class="exp-dates">24 feb - 26 mar</span>
+              </div>
+              <span class="exp-price">35,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/258017">
+            <img src="assets/images/similar/similar-terrario.jpg" alt="Terrario eterno" />
+            <div class="exp-info">
+              <span class="exp-venue">Greenworks Madrid</span>
+              <h3 class="exp-title">Crea tu propio terrario eterno - Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 5.0 <span class="exp-reviews">(4)</span></span>
+                <span class="exp-dates">28 feb - 25 oct</span>
+              </div>
+              <span class="exp-price">120,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/352596">
+            <img src="assets/images/similar/similar-sobrenatural.jpg" alt="Sobrenatural" />
+            <div class="exp-info">
+              <span class="exp-venue">Teatro Victoria</span>
+              <h3 class="exp-title">Sobrenatural - Espectáculo de magia y mucho humor</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 5.0 <span class="exp-reviews">(21)</span></span>
+                <span class="exp-dates">6 mar - 24 abr</span>
+              </div>
+              <span class="exp-price">15,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/500299">
+            <img src="assets/images/similar/similar-soltera.jpg" alt="Soltera y entera" />
+            <div class="exp-info">
+              <span class="exp-venue">Soho Club Teatro</span>
+              <h3 class="exp-title">Soltera y entera en Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">11 mar - 22 abr</span>
+              </div>
+              <span class="exp-price">Desde 10,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/286513">
+            <img src="assets/images/similar/similar-siesta.jpg" alt="Se acabó la Siesta" />
+            <div class="exp-info">
+              <span class="exp-venue">Soho Club Teatro</span>
+              <h3 class="exp-title">¡Se acabó la Siesta! con Juan Moreno en Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.6 <span class="exp-reviews">(31)</span></span>
+                <span class="exp-dates">24 feb - 21 abr</span>
+              </div>
+              <span class="exp-price">Desde 9,90 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/109371">
+            <img src="assets/images/similar/similar-parque.jpg" alt="Parque de Atracciones" />
+            <div class="exp-info">
+              <span class="exp-venue">Parque de Atracciones de Madrid</span>
+              <h3 class="exp-title">Parque de Atracciones de Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.6 <span class="exp-reviews">(879)</span></span>
+                <span class="exp-dates">28 feb - 17 may</span>
+              </div>
+              <span class="exp-price">Desde 23,91 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/184320">
+            <img src="assets/images/similar/similar-magia.jpg" alt="Magia humor" />
+            <div class="exp-info">
+              <span class="exp-venue">Sala Houdini</span>
+              <h3 class="exp-title">Magia, humor y lo que surja</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.8 <span class="exp-reviews">(35)</span></span>
+                <span class="exp-dates">7 mar - 27 jun</span>
+              </div>
+              <span class="exp-price">18,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/70448">
+            <img src="assets/images/similar/similar-impro-cafe.jpg" alt="Impro Café Show" />
+            <div class="exp-info">
+              <span class="exp-venue">La Escalera de Jacob de Lavapiés</span>
+              <h3 class="exp-title">Impro Café Show en La Escalera de Jacob</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.8 <span class="exp-reviews">(106)</span></span>
+                <span class="exp-dates">26 feb - 26 mar</span>
+              </div>
+              <span class="exp-price">12,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/142769">
+            <img src="assets/images/similar/similar-cocina-impro.jpg" alt="Cocina de la impro" />
+            <div class="exp-info">
+              <span class="exp-venue">La Escalera de Jacob de Lavapiés</span>
+              <h3 class="exp-title">La Cocina de la impro en La Escalera de Jacob</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.7 <span class="exp-reviews">(13)</span></span>
+                <span class="exp-dates">1 mar - 29 mar</span>
+              </div>
+              <span class="exp-price">6,00 €</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED EXPERIENCES -->
+    <section class="experiences-section">
+      <h2 class="section-title">Descubre nuestras experiencias destacadas</h2>
+      <div class="experiences-scroll">
+        <div class="experience-card">
+          <a href="https://feverup.com/m/432252">
+            <img src="assets/images/featured/featured-f1.jpg" alt="Formula 1" />
+            <div class="exp-info">
+              <span class="exp-venue">MADRING</span>
+              <h3 class="exp-title">FORMULA 1® TAG HEUER GRAN PREMIO DE ESPAÑA 2026</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">11 sept</span>
+              </div>
+              <span class="exp-price">Desde 345,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/519665">
+            <img src="assets/images/featured/featured-moda.jpg" alt="La M.O.D.A" />
+            <div class="exp-info">
+              <span class="exp-venue">Huesca</span>
+              <h3 class="exp-title">La M.O.D.A + Sanguijuelas del Guadiana en Pirineos Sur 2026</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">16 jul</span>
+              </div>
+              <span class="exp-price">40,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/555770">
+            <img src="assets/images/featured/featured-sonico.jpg" alt="Subsónico" />
+            <div class="exp-info">
+              <span class="exp-venue">Auditorio Miguel Ríos de Rivas Vaciamadrid</span>
+              <h3 class="exp-title">Subsónico, Madrid 2026</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">5 jun - 6 jun</span>
+              </div>
+              <span class="exp-price">Desde 40,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/121772">
+            <img src="assets/images/featured/featured-kapital.jpg" alt="Teatro Kapital" />
+            <div class="exp-info">
+              <span class="exp-venue">Teatro Kapital</span>
+              <h3 class="exp-title">Teatro Kapital: ¡las fiestas más top de Madrid!</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.3 <span class="exp-reviews">(1757)</span></span>
+                <span class="exp-dates">25 feb - 29 mar</span>
+              </div>
+              <span class="exp-price">Desde 21,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/274138">
+            <img src="assets/images/featured/featured-banksy.jpg" alt="Museo Banksy" />
+            <div class="exp-info">
+              <span class="exp-venue">Museo Banksy Madrid</span>
+              <h3 class="exp-title">Museo Banksy Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.8 <span class="exp-reviews">(5399)</span></span>
+                <span class="exp-dates">24 feb - 30 jun</span>
+              </div>
+              <span class="exp-price">14,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/576009">
+            <img src="assets/images/featured/featured-kampus.jpg" alt="KAMPUS Festival" />
+            <div class="exp-info">
+              <span class="exp-venue">VG Fuenlabrada</span>
+              <h3 class="exp-title">KAMPUS FESTIVAL UNIVERSITARIO en VG</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">7 mar</span>
+              </div>
+              <span class="exp-price">12,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/502082">
+            <img src="assets/images/featured/featured-flow.jpg" alt="Flow Inmersiva" />
+            <div class="exp-info">
+              <span class="exp-venue">Comunidad Evangélica de Habla Alemana</span>
+              <h3 class="exp-title">Flow: Una nueva experiencia inmersiva en Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.0 <span class="exp-reviews">(926)</span></span>
+                <span class="exp-dates">25 feb - 29 mar</span>
+              </div>
+              <span class="exp-price">Desde 10,90 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/532196">
+            <img src="assets/images/featured/featured-adrian.jpg" alt="Adrián Mills FABRIK" />
+            <div class="exp-info">
+              <span class="exp-venue">Fabrik</span>
+              <h3 class="exp-title">Adrián Mills all night long en FABRIK</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">7 mar</span>
+              </div>
+              <span class="exp-price">Desde 35,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/429319">
+            <img src="assets/images/featured/featured-machu.jpg" alt="Machu Picchu" />
+            <div class="exp-info">
+              <span class="exp-venue">Fever Hub Madrid | Experiencias Inmersivas</span>
+              <h3 class="exp-title">Machu Picchu: Viaje a la Ciudad Perdida</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.3 <span class="exp-reviews">(3059)</span></span>
+                <span class="exp-dates">25 feb - 30 abr</span>
+              </div>
+              <span class="exp-price">Desde 18,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/472009">
+            <img src="assets/images/featured/featured-polar.jpg" alt="Polar Sound" />
+            <div class="exp-info">
+              <span class="exp-venue">Barcelona</span>
+              <h3 class="exp-title">Abonos Polar Sound Occident Festival 2026</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">13 mar - 14 mar</span>
+              </div>
+              <span class="exp-price">Desde 9,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/523688">
+            <img src="assets/images/featured/featured-oklou.jpg" alt="OKLOU" />
+            <div class="exp-info">
+              <span class="exp-venue">Sala La Riviera</span>
+              <h3 class="exp-title">OKLOU en La Riviera, Madrid 2026</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">10 jun</span>
+              </div>
+              <span class="exp-price">26,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/141988">
+            <img src="assets/images/featured/featured-palacio.jpg" alt="Palacio Real" />
+            <div class="exp-info">
+              <span class="exp-venue">Palacio Real de Madrid</span>
+              <h3 class="exp-title">Palacio Real de Madrid</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.5 <span class="exp-reviews">(17348)</span></span>
+                <span class="exp-dates">25 feb - 24 may</span>
+              </div>
+              <span class="exp-price">Desde 12,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/478360">
+            <img src="assets/images/featured/featured-avatar.jpg" alt="Avatar The Experience" />
+            <div class="exp-info">
+              <span class="exp-venue">Espacio Delicias</span>
+              <h3 class="exp-title">Avatar: The Experience</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">25 feb - 29 mar</span>
+              </div>
+              <span class="exp-price">Desde 14,50 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/142742">
+            <img src="assets/images/featured/featured-descalzas.jpg" alt="Descalzas Reales" />
+            <div class="exp-info">
+              <span class="exp-venue">Monasterio de las Descalzas Reales</span>
+              <h3 class="exp-title">Monasterio de las Descalzas Reales</h3>
+              <div class="exp-meta">
+                <span class="exp-rating">★ 4.3 <span class="exp-reviews">(2614)</span></span>
+                <span class="exp-dates">26 feb - 17 may</span>
+              </div>
+              <span class="exp-price">9,00 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="experience-card">
+          <a href="https://feverup.com/m/568983">
+            <img src="assets/images/featured/featured-rugby.jpg" alt="Rugby Europe Championship" />
+            <div class="exp-info">
+              <span class="exp-venue">Estadio Nacional Complutense</span>
+              <h3 class="exp-title">Rugby Europe Championship Madrid Finals</h3>
+              <div class="exp-meta">
+                <span class="exp-badge">¡Nuevo!</span>
+                <span class="exp-dates">15 mar</span>
+              </div>
+              <span class="exp-price">Desde 5,00 €</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED CATEGORIES -->
+    <section class="categories-section">
+      <h2 class="section-title">Categorías relacionadas</h2>
+      <div class="categories-list">
+        <a href="#" class="category-tag">Experiencias y Exposiciones Inmersivas</a>
+        <a href="#" class="category-tag">Parques Temáticos y Acuáticos</a>
+        <a href="#" class="category-tag">Actividades</a>
+        <a href="#" class="category-tag">Talleres DIY</a>
+        <a href="#" class="category-tag">Juegos</a>
+        <a href="#" class="category-tag">Deportes y Aventura</a>
+        <a href="#" class="category-tag">Familia</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="assets/images/logos/fever-logo-white.svg" alt="Fever" />
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Acerca de Fever</h4>
+          <ul>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Únete al equipo</a></li>
+            <li><a href="#">Becas de Excelencia</a></li>
+            <li><a href="#">Tarjetas Regalo</a></li>
+            <li><a href="#">Centro de asistencia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Colabora con nosotros</h4>
+          <ul>
+            <li><a href="#">Gestiona tu evento</a></li>
+            <li><a href="#">Publica tu evento</a></li>
+            <li><a href="#">Eventos y beneficios para empresas</a></li>
+            <li><a href="#">Programa de Afiliados</a></li>
+            <li><a href="#">Programa de embajadores e influencers</a></li>
+            <li><a href="#">Colaboraciones de marca</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fever para negocios</h4>
+          <ul>
+            <li><a href="#">Eventos privados y entradas de grupo</a></li>
+            <li><a href="#">Beneficios corporativos</a></li>
+            <li><a href="#">Tarjetas y cupones de regalo corporativos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span><a href="#">Términos de uso</a> | <a href="#">Política de privacidad</a> | <a href="#">Administrador de cookies</a></span>
+        <span>©2026 - Fever</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>
