@@ -1090,13 +1090,8 @@ ul.experience-grid {
   line-height: 1.65rem;
 }
 
-/* 3-column grid for spaces on desktop */
 @media (min-width: 992px) {
   ul.experience-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pd-section--spaces ul.experience-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
