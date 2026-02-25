@@ -1068,16 +1068,57 @@ ul.experience-grid {
   color: #1a1a1a;
 }
 
-/* Intro editorial */
-.pd-section--intro p {
-  font: var(--pd-font-body-paragraph);
-  color: #333;
-  margin-bottom: 1rem;
+/* Intro grid 2x2 */
+.intro-grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  gap: 1.25rem;
 }
 
-.pd-section--intro p:first-child {
-  font: var(--pd-font-body-bold);
-  font-size: 1.05rem;
+.intro-grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-grid__item {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-grid__figure {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.intro-grid__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.intro-grid__caption {
+  margin: 0;
+  font: var(--pd-font-body-paragraph);
+  color: #333;
+}
+
+.intro-grid__caption p {
+  margin: 0 0 0.5rem 0;
+}
+
+.intro-grid__caption p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .intro-grid--1x2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Enjoy & outro icon as emoji */
