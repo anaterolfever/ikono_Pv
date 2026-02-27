@@ -1086,6 +1086,7 @@ ul.experience-grid {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
+  aspect-ratio: 16 / 9;
   border-radius: 0.5rem;
   overflow: hidden;
   background: #000;
@@ -1094,7 +1095,8 @@ ul.experience-grid {
 .video-container video {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   vertical-align: middle;
 }
 
