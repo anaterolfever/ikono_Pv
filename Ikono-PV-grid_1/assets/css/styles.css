@@ -1076,28 +1076,6 @@ ul.experience-grid {
   color: #1a1a1a;
 }
 
-/* Intro video */
-.tab.content1 {
-  margin-bottom: 1.5rem;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  background: #000;
-}
-
-.video-container video {
-  display: block;
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 /* Intro grid 2x2 */
 .intro-grid {
   display: grid;
@@ -1119,19 +1097,6 @@ ul.experience-grid {
   grid-column: span 1;
   grid-row: span 2;
   grid-template-rows: subgrid;
-  gap: 0.75rem;
-}
-
-/* Intro grid solo texto (debajo del video) */
-.intro-grid--text-only {
-  grid-template-rows: auto;
-}
-
-.intro-grid--text-only .intro-grid__item {
-  display: flex;
-  flex-direction: column;
-  grid-column: auto;
-  grid-row: auto;
   gap: 0.75rem;
 }
 
