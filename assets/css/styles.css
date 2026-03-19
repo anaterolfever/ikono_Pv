@@ -1077,6 +1077,28 @@ ul.experience-grid {
   color: #1a1a1a;
 }
 
+.pd-section__sub {
+  display: block;
+  margin-top: 0.35rem;
+  font: var(--pd-font-body-paragraph);
+  color: #555;
+}
+
+.pd-section__text--google-line {
+  line-height: 1.65;
+}
+
+.pd-section__text--google-line .extra-image-plan {
+  vertical-align: middle;
+}
+
+.extra-image-plan {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: auto;
+}
+
 /* Intro video */
 .tab.content1 {
   margin-bottom: 1.5rem;
