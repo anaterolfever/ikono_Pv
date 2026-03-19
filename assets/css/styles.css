@@ -936,13 +936,13 @@ ul {
   --pd-color-text-main: #031419;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.25rem;
   font: var(--pd-font-body-regular);
 }
 
 .pd-description p {
   font: var(--pd-font-body-paragraph);
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.65rem 0;
 }
 
 .pd-description a {
@@ -955,9 +955,40 @@ ul {
 
 .pd-section__title {
   font: var(--pd-font-xl);
-  margin-block: 0 1rem;
+  margin-block: 0 0.65rem;
   margin-left: 0;
   padding-left: 0;
+}
+
+/* Intro: compacto; primer párrafo en cursiva (.pd-intro-lead) */
+.pd-section--intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.pd-section--intro .pd-intro-lead {
+  margin: 0 !important;
+}
+
+.pd-section--intro .pd-intro-lead em {
+  font-style: italic;
+  font: var(--pd-font-body-paragraph);
+}
+
+.pd-section--intro .pd-intro-lead em strong {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.pd-section--intro .intro-grid {
+  margin: 0 !important;
+  gap: 0.75rem;
+}
+
+.intro-grid__item > .pd-section__title {
+  margin-block: 0 0.2rem;
+  font: var(--pd-font-lg);
 }
 
 .pd-section__title--italic {
@@ -1099,6 +1130,16 @@ ul.experience-grid {
   width: auto;
 }
 
+/* COLORIS: tras descripción, antes de opiniones */
+.pd-section--coloris {
+  margin-top: 0.5rem;
+  padding-top: 0;
+}
+
+.pd-section--coloris p {
+  margin-bottom: 0;
+}
+
 /* Intro video */
 .tab.content1 {
   margin-bottom: 1.5rem;
@@ -1128,8 +1169,8 @@ ul.experience-grid {
   display: grid;
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5rem 0;
-  gap: 1.25rem;
+  margin: 0;
+  gap: 1rem;
 }
 
 /* Mobile first: 1 column; 2 columns from desktop */
@@ -1152,7 +1193,7 @@ ul.experience-grid {
   grid-column: span 1;
   grid-row: span 2;
   grid-template-rows: subgrid;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
 /* Intro grid solo texto (debajo del video) */
@@ -1165,7 +1206,7 @@ ul.experience-grid {
   flex-direction: column;
   grid-column: auto;
   grid-row: auto;
-  gap: 0.75rem;
+  gap: 0.35rem;
 }
 
 .intro-grid__figure {
@@ -1186,11 +1227,12 @@ ul.experience-grid {
 .intro-grid__caption {
   margin: 0;
   font: var(--pd-font-body-paragraph);
-  color: #333;
+  color: #555;
+  line-height: 1.5;
 }
 
 .intro-grid__caption p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.3rem 0;
 }
 
 .intro-grid__caption p:last-child {
